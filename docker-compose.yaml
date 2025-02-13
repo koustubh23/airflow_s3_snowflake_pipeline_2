@@ -1,0 +1,22 @@
+version: '3'
+
+
+
+services:
+  airflowproject:
+    image: airflowproject:latest   
+
+    volumes:
+
+      - ./airflow:/opt/airflow
+
+    ports:
+
+      - "8080:8080"
+
+    command: airflow standalone
+
+  test-airflow-email:
+    image: bytemark/smtp
+    restart: always
+    

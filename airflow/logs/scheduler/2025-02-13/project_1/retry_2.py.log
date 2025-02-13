@@ -1,0 +1,28 @@
+[2025-02-13T01:49:45.896+0000] {processor.py:186} INFO - Started process (PID=838) to work on /opt/airflow/dags/project_1/retry_2.py
+[2025-02-13T01:49:45.897+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project_1/retry_2.py for tasks to queue
+[2025-02-13T01:49:45.901+0000] {logging_mixin.py:190} INFO - [2025-02-13T01:49:45.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/project_1/retry_2.py
+[2025-02-13T01:49:45.950+0000] {logging_mixin.py:190} INFO - [2025-02-13T01:49:45.941+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/project_1/retry_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/project_1/retry_2.py", line 6, in <module>
+    from plugins import get_data
+ModuleNotFoundError: No module named 'plugins'
+[2025-02-13T01:49:45.954+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/project_1/retry_2.py
+[2025-02-13T01:49:45.999+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project_1/retry_2.py took 0.108 seconds
+[2025-02-13T01:50:16.995+0000] {processor.py:186} INFO - Started process (PID=840) to work on /opt/airflow/dags/project_1/retry_2.py
+[2025-02-13T01:50:16.996+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/project_1/retry_2.py for tasks to queue
+[2025-02-13T01:50:16.998+0000] {logging_mixin.py:190} INFO - [2025-02-13T01:50:16.997+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/project_1/retry_2.py
+[2025-02-13T01:50:17.034+0000] {logging_mixin.py:190} INFO - [2025-02-13T01:50:17.026+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/project_1/retry_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/project_1/retry_2.py", line 6, in <module>
+    from plugins import get_data
+ModuleNotFoundError: No module named 'plugins'
+[2025-02-13T01:50:17.037+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/project_1/retry_2.py
+[2025-02-13T01:50:17.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/project_1/retry_2.py took 0.092 seconds
